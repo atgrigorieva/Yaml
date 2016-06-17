@@ -23,5 +23,7 @@ resources:
         echo "sudo apt-get update" >> /tmp/log
         echo "git clone https://github.com/atgrigorieva/puppet.git" >> /tmp/log
         git clone https://github.com/atgrigorieva/puppet.git
-        echo "sudo puppet apply puppet/helloworld.pp" >> /tmp/log
-        sudo puppet apply puppet/helloworld.pp
+        echo "sudo puppet apply puppet/hellojava.pp" >> /tmp/log
+        sudo puppet apply puppet/hellojava.pp
+      #  echo "git clone https://github.com/atgrigorieva/puppet.git" >> /tmp/log
+       # git clone https://github.com/atgrigorieva/puppet.git
