@@ -1,17 +1,19 @@
 
+heat_template_version: 2013-05-23
+
 description: Simple template to deploy a single compute instance
 
 resources:
   my_instance:
     type: OS::Nova::Server
     properties:
-      key_name: stu53607_4
+      key_name: stu53607_5
       image: Ubuntu-14.04-x86_64
       flavor: m1.medium
       networks:
-        - network: local
+        - network: student-main-network
       user_data: |
-        #!/bin/bash
+       #!/bin/bash
         sudo chsh -s /bin/bash ec2-user
         cd /home/ec2-user
         echo "sudo apt-get update" >> /tmp/log
